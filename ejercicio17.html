@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="funcionesValidacion.js"></script>
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <h1>Contacte con Tower Communications</h1>
+  <p>Para enviar sus sugerencias, opinioneso comentarios, COMPLETE EL SIGUIENTE FORMULARIO.Gracias </p>
+
+  <form target="blank" action="https://www.google.com/search" onsubmit="return validarFormulario()">
+
+    <label for="" id="label1">Selecione el destinatario de su mensaje </label>
+    <select name="sele" id="sele">
+      <option value="">Servicio tecnico</option>
+      <option value="" selected>Devoluciones</option>
+      <option value="">Ventas</option>
+    </select>
+    <span></span>
+
+    <label for="ape">Nombre Y Apellidos </label>
+    <input type="text" name="ape" id="ape">
+    <span id="mensajeApe"></span>
+
+    <label for="dom">Domicilio</label>
+    <input type="text" name="dom" id="dom">
+    <span id="mensajeDom"></span>
+
+    <label for="ciu">Ciudad </label>
+    <input type="text" name="ciu" id="ciu">
+    <span id="mensajeCiu"></span>
+
+    <label for="cp">Codigo Postal </label>
+    <input type="number" name="cp" id="cp">
+    <span id="mensajeCP"></span>
+
+    <label for="pro">Provincia </label>
+    <input type="text" name="pro" id="pro">
+    <span id="mensajePro"></span>
+
+    <label for="pho">Telefono </label>
+    <input type="phone" name="pho" id="pho">
+    <span id="mensajePho"></span>
+
+
+
+    <label for="mail">E-mail </label>
+    <input type="text" name="mail" id="mail">
+    <span id="mensajeMail"></span>
+
+    <label for="nac">Fecha de Nacimiento </label>
+    <input type="date" name="nac" id="nac">
+    <span id="mensajeNac"></span>
+
+    <span></span>
+    <div>
+      <button type="submit">Enviar Formulario</button>
+      <button type="reset" onclick="limpiar()">Limpiar</button>
+
+    </div>
+  </form>
+  <script src="js.js">
+
+
+  </script>
+
+</body>
+
+</html>
